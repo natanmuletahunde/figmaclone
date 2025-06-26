@@ -77,13 +77,10 @@ export const handleCanvasMouseDown = ({
   ) {
     isDrawing.current = false;
 
-    // set active object to target
+    
     canvas.setActiveObject(target);
 
-    /**
-     * setCoords() is used to update the controls of the object
-     * setCoords: http://fabricjs.com/docs/fabric.Object.html#setCoords
-     */
+  
     target.setCoords();
   } else {
     isDrawing.current = true;
